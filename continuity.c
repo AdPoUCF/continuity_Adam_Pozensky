@@ -84,13 +84,13 @@ int determineNumericalGrade(){
     double weight[8] = {0.10, 0.10, 0.10, 0.20, 0.20, 0.05, 0.05, 0.20}; 
 
     //Loop scan for user input of grades
-    for(int g = 0; g < 8; g++){
+    for(int i = 0; i < 8; i++){
         
-        printf("Enter your grade %d: ", g + 1); 
-        scanf("%d", &grades[g]);
+        printf("Enter your grade %d: ", i + 1); 
+        scanf("%d", &grades[i]);
         
         //Calculating Array grades for weighted average
-        weightAvg += grades[g] * weight[g]; 
+        weightAvg += grades[i] * weight[i]; 
 
     }
 
